@@ -1,5 +1,6 @@
 import Icon from "../Icon/Icon";
 import './card.css';
+import { memo } from "react";
 
 function Card({ onPlay ,player ,index,gameEnd}) { // Destructure props here
   
@@ -23,4 +24,4 @@ function Card({ onPlay ,player ,index,gameEnd}) { // Destructure props here
     );
 }
 
-export default Card;
+export default memo(Card);
